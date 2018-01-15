@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { NoteService } from './note.service';
+import { ProductService } from './product.service';
 
-import { NotesListComponent } from './notes-list/notes-list.component';
-import { NoteDetailComponent } from './note-detail/note-detail.component';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
@@ -19,9 +19,9 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     AngularFirestoreModule.enablePersistence(),
   ],
   declarations: [
-    NotesListComponent,
-    NoteDetailComponent,
+    ProductsListComponent,
+    ProductDetailComponent,
   ],
-  providers: [NoteService],
+  providers: [ProductService],
 })
-export class NotesModule { }
+export class ProductsModule { }
